@@ -1,0 +1,35 @@
+---
+import { CardGroup } from "../components/CardGroup";
+import { Hero } from "../components/Hero";
+import { ImageHero } from "../components/ImageHero";
+import Layout from "../layouts/Layout.astro";
+
+const cards = [
+  {
+    id: "1",
+    title: "Orçamento Público e Controle Financeiro",
+    description:
+      "Acompanhe todas as receitas e despesas da prefeitura em tempo real. Nossa ferramenta permite um controle efetivo do orçamento, promovendo a gestão responsável dos recursos públicos.",
+  },
+  {
+    id: "2",
+    title: "Transparência na Gestão Fiscal",
+    description:
+      "Nosso sistema oferece recursos de transparência e eficiência no uso dos recursos públicos. Crie relatórios detalhados e compartilhe com o público para promover a confiança e a transparência entre a prefeitura e os cidadãos.",
+  },
+  {
+    id: "3",
+    title: "Planejamento Estratégico Financeiro",
+    description:
+      "Utilize nosso sistema para planejar e acompanhar o cumprimento dos planos financeiros da prefeitura. Com diversos indicadores disponíveis, é possível ter uma visão clara do futuro financeiro da sua cidade.",
+  },
+];
+---
+
+<Layout title="Siga Municipal">
+  <main>
+    <Hero />
+    <CardGroup cards={cards} />
+    <ImageHero />
+  </main>
+</Layout>

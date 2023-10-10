@@ -1,0 +1,30 @@
+---
+import siga_svg from "../assets/siga-screenshot.svg";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Siga Municipal">
+  <main>
+    <div class="container mx-auto flex flex-col sm:flex-row gap-2 items-center">
+      <div class="flex-1 sm:flex-2 items-center">
+        <h1 class="text-4xl font-semibold text-primary">Quem somos</h1>
+        <p class="mt-4 text-gray-600 text-lg">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis eros
+          at lacus feugiat hendrerit sed ut tortor. Suspendisse et magna quis
+          elit efficitur consequat. Mauris eleifend velit a pretium iaculis.
+          Donec sagittis velit et magna euismod, vel aliquet nulla malesuada.
+          Nunc pharetra massa lectus, a fermentum arcu volutpat vel.
+        </p>
+      </div>
+      <div class="flex-1">
+        <img
+          src={siga_svg.src}
+          width={siga_svg.width}
+          height={siga_svg.height}
+          class="w-full sm:max-w-2"
+          alt="Siga Banner"
+        />
+      </div>
+    </div>
+  </main>
+</Layout>

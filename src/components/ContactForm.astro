@@ -1,0 +1,54 @@
+---
+
+---
+
+<div class="container mx-auto flex flex-col">
+  <h1 class="text-4xl font-semibold text-secondary text-left mx-12">
+    Fale conosco
+  </h1>
+  <div class="hero">
+    <div class="w-full sm:px-12 sm:py-5">
+      <form method="POST" name="contact" data-netlify="true">
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text">Nome</span>
+          </label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Nome"
+            class="input input-bordered input-secondary w-full"
+            required
+          />
+        </div>
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text">Email</span>
+          </label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            class="input input-bordered input-secondary w-full"
+            required
+          />
+        </div>
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text">Mensagem</span>
+          </label>
+          <textarea
+            name="message"
+            placeholder="Envia sua mensagem aqui..."
+            class="textarea textarea-secondary textarea-lg w-full"
+            required></textarea>
+        </div>
+        <div class="form-control mt-7">
+          <button type="submit" class="btn btn-secondary w-full">
+            Enviar</button
+          >
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
